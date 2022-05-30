@@ -5,33 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0b165d48f8.js" crossorigin="anonymous"></script>
     <title>Meu Portfólio</title>
 </head>
 
 <body>
-    <section id="presentation">
-        <header class="presentation container">
-            <div>
-                <h1>Olá,<span></span></h1>
-                <h1>meu nome é<span></span></h1>
-                <h1>Mário Cesar<span></span></h1>
-                <a href="#portfolio" type="button" class="cta">Portfólio</a>
+    <header>
+        <section id="presentation">
+            <div class="presentation container">
+                <div>
+                    <h1>Olá,<span></span></h1>
+                    <h1>meu nome é<span></span></h1>
+                    <h1>Mário Cesar<span></span></h1>
+                    <a href="#portfolio" type="button" class="cta">Portfólio</a>
+                </div>
             </div>
-        </header>
-    </section>
-
+        </section>
+    </header>
+    
+<main>
     <section id="portfolio">
-        <main class="portfolio container">
-            <header class="portfolio-header">
-                <img src="./assets/portfolio-como-fazer1.jpg" alt="" class="section-title">                
-            </header>
+        <div class="portfolio container">
+            <div class="portfolio-header">
+                <img id="img-title" src="./assets/portfolio-como-fazer1.jpg" alt="" class="section-title">               
+            </div>
             <div class="all-projects">
                 <article class="project-item">
                     <div class="project-info">
-                        <a href="https://mario-cesar-yzarck.github.io/TiaGildaBooks/" target="_blank" title="link do site"><h1>Bibliotéca do Polo</h1></a>                        
-                        <h2>Site para a bibliotéca do Polo UAB (em elaboração)</h2>
+                        <a href="https://mario-cesar-yzarck.github.io/TiaGildaBooks/" target="_blank" title="link do site"><h1>Biblioteca do Polo</h1></a>                        
+                        <h2>Site para a biblioteca do Polo UAB (em elaboração)</h2>
                         <p>O projeto nasceu como um local onde os livros do Polo da UAB de Ecoporanga pudessem ser cadastrados e apresentados aos alunos. Com o tempo novas funcionalidades foram sendo acrescentadas, como formulário para contato e possibilidade de reserva de livros. Todavia o projeto ainda se encontra em elaboração. E a ideia é que possa ser feita uma aplicação web em que qualquer pessoa possa cadastrar seus livros, como uma biblioteca pessoal online.</p>
-                            <a href="https://github.com/Mario-Cesar-Yzarck/TiaGildaBooks" target="_blank" title="link no github">Link do projeto</a>
+                        <a href="https://github.com/Mario-Cesar-Yzarck/TiaGildaBooks" target="_blank" title="link no github">Link do projeto</a>
                     </div>
                     <figure class="project-img">
                         <img src="./assets/lib-polo-img1.png" alt="img">
@@ -42,7 +46,7 @@
                         <a href="https://mario-cesar-yzarck.github.io/Projeto_Coordenadas/" target="_blank" title="link do site"><h1>Projeto Coordenadas</h1></a>                                                                    
                         <h2>Página para obtenção de coordenadas (em elaboração)</h2>
                         <p>Este projeto foi um pedido do meu irmão. Ele é engenheiro e a empresa que ele trabalha estava solicitando um local (página web) onde fosse possível identificar os clientes e apresentar um ponto de coordenada central. A ideia é criar um banco de dados e acessar as informações das empresas clientes já cadastradas e mostrar as informações sobre as mesmas nesta página. O projeto ainda não foi finalizado a previsão de encerramento e apresentação é para o final do ano de 2022.</p>
-                            <a href="https://github.com/Mario-Cesar-Yzarck/Projeto_Coordenadas" target="_blank" title="link no github">Link do projeto</a>
+                        <a href="https://github.com/Mario-Cesar-Yzarck/Projeto_Coordenadas" target="_blank" title="link no github">Link do projeto</a>
                     </div>
                     <figure class="project-img">
                         <img src="./assets/coordenadas-img1.png" alt="img">                                  
@@ -71,7 +75,16 @@
                     </figure>
                 </article>
             </div>
-        </main>
+        </div>
+        
     </section>
+    
+    
+</main>
+
+<footer>   
+    <a href="#presentation" class="back-top" alt="Voltar ao topo." title="Voltar ao topo"><i class="fas fa-caret-square-up" style="font-size:36px; margin-left: 30px; margin-bottom: 20px;"></i></a>
+</footer>
+    
 </body>
 </html>

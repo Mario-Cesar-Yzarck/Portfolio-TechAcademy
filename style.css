@@ -15,11 +15,13 @@ html{
 a{
     text-decoration: none;
 }
+
 img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
+
 p {
     font-size: 1.4rem;
     margin-top: 5px;
@@ -35,6 +37,7 @@ p {
     align-items: center;
     justify-content: center;
 }
+
 .section-title {
     font-size: 4rem;
     font-weight: 500;
@@ -45,7 +48,6 @@ p {
     letter-spacing: 0.2rem;
     text-align: center;
 }
-
 
 
 /* Seção de apresentação */
@@ -66,9 +68,11 @@ p {
     animation: text_reveal .5s ease forwards;
     animation-delay: 1.5s;
 }
+
 #presentation h1:nth-child(1){
     animation-delay: .8s;
 }
+
 #presentation h1:nth-child(2){
     animation-delay: 1.8s;
 }
@@ -211,6 +215,10 @@ p {
     transform: scale(1.1);
 }
 
+.back-top {
+    text-decoration: none;    
+}
+
 /* Keyframes */
 
 @keyframes text_reveal{
@@ -254,6 +262,17 @@ p {
     #portfolio .project-item:nth-child(even) {
         flex-direction: row-reverse;
     }
+    
+}
 
-
+@media (max-width: 426px) {
+    #portfolio .portfolio-header #img-title{
+        width: 350px;
+    }
+    #portfolio .project-info h1 {
+        font-size: 30px;
+    }
+    #presentation h1 {
+        font-size: 40px;
+    }
 }
