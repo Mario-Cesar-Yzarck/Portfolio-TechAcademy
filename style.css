@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,500&display=swap');
 
+/*
+Paleta de cores
+#3d0a49 roxo
+#5015bd roxo claro
+#027fe9 azul
+#e8d826 gold
+#e0daf7 bege
+*/
+
 *{
     padding: 0;
     margin: 0;
@@ -10,6 +19,7 @@ html{
     font-size: 10px;
     font-family: 'Poppins', 'Times New Roman', Times, serif ;
     scroll-behavior: smooth;
+    background-color: #e0daf7;
 }
 
 a{
@@ -40,8 +50,7 @@ p {
 
 .section-title {
     font-size: 4rem;
-    font-weight: 500;
-    color: black;
+    font-weight: 500;  
     margin-bottom: 10px;
     margin-top: 5px;
     text-transform: uppercase;
@@ -83,9 +92,9 @@ p {
 #presentation .cta{
     display: inline-block;
     padding: 10px 30px;
-    color: gold;
+    color: #e8d826;
     background-color: transparent;
-    border: 2px solid gold;
+    border: 2px solid #e8d826;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
@@ -97,7 +106,7 @@ p {
 #presentation .cta:hover{
     color: white;
     font-weight: 500;
-    background-color: gold;
+    background-color: #e8d826;
 }
 #presentation h1 span{
     position: absolute;
@@ -170,9 +179,10 @@ p {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(60deg, #5a10b5 0%, #002349 100%);
+    background-image: linear-gradient(60deg, #5015bd 0%, #3d0a49 100%);
     color: white;
 }
+
 
 #portfolio .project-info h1{
     font-size: 4rem;
@@ -205,8 +215,8 @@ p {
     top:0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    opacity: 0.7;
+    background-image: linear-gradient(60deg, #19456b 0%, #027fe9 100%);
+    opacity: 0.2;
 }
 #portfolio .project-img img{
     transition: 0.5s ease transform;
@@ -216,7 +226,23 @@ p {
 }
 
 .back-top {
-    text-decoration: none;    
+    text-decoration: none; 
+    color: #3d0a49;   
+}
+
+footer .medias-sociais {
+    margin-left: 50%;
+}
+
+footer .medias-sociais a i {
+    color: #3d0a49;
+    font-size: 36px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+footer .medias-sociais a i:hover {
+    transform: translateY(-8px);
 }
 
 /* Keyframes */
@@ -245,10 +271,23 @@ p {
 }
 
 /* Media Query */
-@media only screen and (min-width: 768px) {
+
+@media screen and (max-width: 426px) {
+    #portfolio .portfolio-header #img-title{
+        width: 350px;
+    }
+    #portfolio .project-info h1 {
+        font-size: 30px;
+    }
+    #presentation h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) {
     #portfolio .project-item {
         flex-direction: row;
-        height: 400px;
+        height: 600px;
         margin: 0;
         width: 100%;
         border-radius: 0;
@@ -261,18 +300,6 @@ p {
     }
     #portfolio .project-item:nth-child(even) {
         flex-direction: row-reverse;
-    }
-    
+    }    
 }
 
-@media (max-width: 426px) {
-    #portfolio .portfolio-header #img-title{
-        width: 350px;
-    }
-    #portfolio .project-info h1 {
-        font-size: 30px;
-    }
-    #presentation h1 {
-        font-size: 40px;
-    }
-}
