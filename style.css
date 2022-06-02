@@ -11,7 +11,7 @@ Paleta de cores
     background-color: #5d2747; roxo claro
 }
 #div4 {
-    background-color: #acbfb7; cinza claro
+    background-color: ##9edae0; azul claro
 }
 #div5 {
     background-color: #f6ebdd; quase branco
@@ -33,7 +33,7 @@ html{
     font-size: 10px;
     font-family: 'Poppins', 'Times New Roman', Times, serif ;
     scroll-behavior: smooth;
-    background-color: #acbfb7;
+    background-color: #9edae0;
 }
 
 a{
@@ -76,7 +76,7 @@ p {
 /* Seção de apresentação */
 
 #presentation{
-    background-image: url(assets/background.jpeg);
+    background-image: url(assets/paper2.webp);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -164,7 +164,7 @@ p {
 }
 
 #introdution .text-introdution p{
-    padding: 30px 100px;
+    padding: 25px 100px;
     font-size: 20px;
 }
 
@@ -215,12 +215,12 @@ p {
 
 #portfolio .project-info h1{
     font-size: 4rem;
-    font-weight: 500;
+    font-weight: 500px;
 }
 
 #portfolio .project-info h2{
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 500px;
     margin-top: 10px;
 }
 
@@ -305,7 +305,7 @@ footer .btn-back-top a i{
 
 /* Media Query */
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 425px) {
     #portfolio .portfolio-header #img-title{
         width: 350px;
     }
@@ -335,9 +335,9 @@ footer .btn-back-top a i{
 @media only screen and (min-width: 768px) {
     #portfolio .project-item {
         flex-direction: row;
-        height: 420px;
+        height: 480px;
         margin: 0;
-        width: 95%;
+        width: 90%;
         border-radius: 0;
     }
     #portfolio .all-projects .project-info{
