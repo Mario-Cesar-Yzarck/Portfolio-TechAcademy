@@ -330,39 +330,6 @@ footer .btn-back-top a i{
     } 
 }
 
-/*
-
-@media only screen and (min-width: 426px) {
-    #portfolio .portfolio-header #img-title{
-        width: 350px;
-    }
-    #portfolio .project-info h1 {
-        font-size: 20px;
-    }
-    #portfolio .project-info p {
-        font-size: 10px;
-    }
-    #presentation h1 {
-        font-size: 40px;
-    }
-    #introdution .introdution-container {
-        margin: 0px;
-        padding: 40px 20px;
-        text-align: center;
-        background-color: #f6ebdd;
-        font-size: 15px;
-    }    
-    #introdution .text-introdution p{
-        padding: 10px 30px;
-        font-size: 14px;
-    }
-    footer .btn-back-top{
-        text-align: center;
-        margin: 0;
-    } 
-}
-*/
-
 @media only screen and (min-width: 768px) {
     #portfolio .project-item {
         flex-direction: row;
