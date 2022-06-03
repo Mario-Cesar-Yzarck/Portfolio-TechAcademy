@@ -33,7 +33,7 @@ html{
     font-size: 10px;
     font-family: 'Poppins', 'Times New Roman', Times, serif ;
     scroll-behavior: smooth;
-    background-color: #9edae0;
+    background-image: linear-gradient(60deg, #e5dbfd 0%, #fa661d 100%);
 }
 
 a{
@@ -247,6 +247,7 @@ p {
 #portfolio .project-item .links a{
     padding: 10px;
     font-size: 30px;
+    
 }
 
 /* Footer (medias sociais e btn back to top)*/
@@ -299,12 +300,15 @@ footer .btn-back-top a i{
 
 /* Media Query */
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 768px) {
     #portfolio .portfolio-header #img-title{
         width: 350px;
     }
     #portfolio .project-info h1 {
-        font-size: 30px;
+        font-size: 25px;
+    }
+    #portfolio .project-info p {
+        font-size: 12px;
     }
     #presentation h1 {
         font-size: 40px;
