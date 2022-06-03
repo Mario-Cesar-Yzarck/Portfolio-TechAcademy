@@ -5,6 +5,16 @@ const btnRight = document.getElementById("btn-right")
 
 let idx = 0
 
+function changeImg() {
+    idx++;
+
+    if(idx > img.length -1) {       
+        idx = 0;
+    }    
+
+    imgs.style.transform = `translateX(${-idx* 650}px)`;
+}
+
 btnLeft.addEventListener("click", e => {
     e.preventDefault();
     idx--;
@@ -29,3 +39,4 @@ btnRight.addEventListener("click", e => {
     imgs.style.transform = `translateX(${-idx* 650}px)`;
 })
 
+setInterval(changeImg, 2500)
