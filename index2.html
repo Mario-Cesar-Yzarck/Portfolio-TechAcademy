@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
+    <link rel="icon" href="./assets/dragon-icon.webp">
     <script src="https://kit.fontawesome.com/0b165d48f8.js" crossorigin="anonymous"></script>
-    <!--<script src="main2.js" defer></script>-->
+    <script src="main2.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -27,56 +28,90 @@
 
     <main>
         <section id="portfolio">
-            <div class="container">
+            <div class="container portfolio">
                 <div class="portfolio-header">
                     <img src="./assets/portfolio-como-fazer1.jpg" alt="">
                 </div>
-                <div class="carousel">
+                <span id="slider"></span>
+                <div class="slider">
                     <div class="slides">
-                        <div class="slide-info">
-                            <h1>Nome do Projeto1</h1>
-                            <p>Informações sobre o projeto.. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde vitae voluptate, nulla commodi officia reprehenderit doloremque error, dicta voluptatum vero dolores laborum sapiente incidunt eius dolor nam adipisci voluptas? Magnam?</p>
-                            <div class="links">
-                                <a href="">site</a>
-                                <a href="">github</a>
+
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+
+                        <div class="slide first">
+                            <div class="slide-info">
+                                <h1>Biblioteca do Polo</h1>
+                                <h2>Site para a biblioteca do Polo UAB (em elaboração)</h2>
+                                <p>O projeto nasceu como um local onde os livros do Polo da UAB de Ecoporanga pudessem ser cadastrados e apresentados aos alunos. Com o tempo novas funcionalidades foram sendo acrescentadas, como formulário para contato e possibilidade de reserva de livros. Todavia o projeto ainda se encontra em elaboração. E a ideia é que possa ser feita uma aplicação web em que qualquer pessoa possa cadastrar seus livros, como uma biblioteca pessoal online.</p>
+                                <div class="links">
+                                    <a href="https://mario-cesar-yzarck.github.io/TiaGildaBooks/" target="_blank" title="link do site"><i class="fa-solid fa-link"></i></a>
+                                    <a href="https://github.com/Mario-Cesar-Yzarck/TiaGildaBooks" target="_blank" title="link no github" ><i class="fa-solid fa-file-code"></i></a>
+                                </div>
+                            </div>
+                            <div class="slide-img">
+                                <img src="./assets/projeto1.png" alt="Imagem do projeto Biblioteca do Polo">
                             </div>
                         </div>
-                        <div class="slide-img">
-                            <img src="./assets/projeto1.png" alt="">
-                        </div>
-                        <div class="slide-info">
-                            <h1>Nome do Projeto2</h1>
-                            <p>Informações sobre o projeto.. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde vitae voluptate, nulla commodi officia reprehenderit doloremque error, dicta voluptatum vero dolores laborum sapiente incidunt eius dolor nam adipisci voluptas? Magnam?</p>
-                            <div class="links">
-                                <a href="">site</a>
-                                <a href="">github</a>
+                        <div class="slide">
+                            <div class="slide-info">
+                                <h1>Projeto Coordenadas</h1>                          
+                                <h2>Página para obtenção de coordenadas (em elaboração)</h2>
+                                <p>Este projeto foi um pedido do meu irmão. Ele é engenheiro e a empresa que ele trabalha estava solicitando um local (página web) onde fosse possível identificar os clientes e apresentar um ponto de coordenada central. A ideia é criar um banco de dados e acessar as informações das empresas clientes já cadastradas e mostrar as informações sobre as mesmas nesta página. O projeto ainda não foi finalizado a previsão de encerramento e apresentação é para o final do ano de 2022.</p>
+                                <div class="links">
+                                    <a href="https://mario-cesar-yzarck.github.io/Projeto_Coordenadas/" target="_blank" title="link do site"><i class="fa-solid fa-link"></i></a>
+                                    <a href="https://github.com/Mario-Cesar-Yzarck/Projeto_Coordenadas" target="_blank" title="link no github"><i class="fa-solid fa-file-code"></i></a>
+                                </div>  
+                            </div>
+                            <div class="slide-img">
+                                <img src="./assets/projeto2.png" alt="Imagem do Projeto Coordenadas">
                             </div>
                         </div>
-                        <div class="slide-img">
-                            <img src="./assets/projeto2.png" alt="">
-                        </div>
-                        <div class="slide-info">
-                            <h1>Nome do Projeto3</h1>
-                            <p>Informações sobre o projeto.. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde vitae voluptate, nulla commodi officia reprehenderit doloremque error, dicta voluptatum vero dolores laborum sapiente incidunt eius dolor nam adipisci voluptas? Magnam?</p>
-                            <div class="links">
-                                <a href="">site</a>
-                                <a href="">github</a>
+                        <div class="slide">
+                            <div class="slide-info">
+                                <h1>OriginSix</h1>
+                                <h2>Projeto elaborado no NLW da Rocketseat</h2>
+                                <p>Este projeto foi elaborado durante o evento NLW da Rocketseat. Foi um projeto importante para minha formação como dev por ser uma aplicação completa, "funcional". Pude aperfeiçoar conhecimentos em HTML, CSS e JavaScript e apesar de ser um conteúdo extenso senti um pouco como é trabalhar com prazos e tendo de levar em consideração várias etapas da construção da aplicação. Foi um dos primeiros projetos que fiz e pude ver resultados significativos.</p>
+                                <div class="links">
+                                    <a href="https://mario-cesar-yzarck.github.io/OriginSix/" target="_blank"
+                                title="link do site"><i class="fa-solid fa-link"></i></a>
+                                    <a href="https://github.com/Mario-Cesar-Yzarck/OriginSix" target="_blank"
+                                title="link no github"><i class="fa-solid fa-file-code"></i></a>
+                                </div>
+                            </div>
+                            <div class="slide-img">
+                                <img src="./assets/projeto3.png" alt="Imagem do projeto OriginSix">
                             </div>
                         </div>
-                        <div class="slide-img">
-                            <img src="./assets/projeto3.png" alt="">
-                        </div>
-                        <div class="slide-info">
-                            <h1>Nome do Projeto4</h1>
-                            <p>Informações sobre o projeto.. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde vitae voluptate, nulla commodi officia reprehenderit doloremque error, dicta voluptatum vero dolores laborum sapiente incidunt eius dolor nam adipisci voluptas? Magnam?</p>
-                            <div class="links">
-                                <a href="">site</a>
-                                <a href="">github</a>
+                        <div class="slide">
+                            <div class="slide-info">
+                                <h1>Certificard</h1>
+                                <h2>Demonstrativo de projetos da Imersão Dev</h2>
+                                <p>Durante o evento Imersão Dev da Alura pude conhecer um pouco mais na prática as tecnologias de HTML, CSS e JavaScript desenvolvendo pequenos projetos na página do CodePen. Apesar da simplicidade dos trabalhos realizados foram gratificantes a participação e a obtenção de alguns objetivos, tanto do evento quanto pessoais. Entre as ações e atividades desenvolvidas na época vale destacar a comunidade de cooperação mútua estabelecida com alguns outros participantes.</p>
+                                <div class="links">                               
+                                    <a href="https://codepen.io/Yzarck/pen/eYgEWdG" target="_blank" title="link no codepen"><i class="fa-solid fa-file-code"></i></a>
+                                </div>                            
                             </div>
+                            <div class="slide-img">
+                                <img src="./assets/projeto4.png" alt="Imagem do projeto Certificard">
+                            </div>
+                        </div> 
+                        
+                        <div class="navigation">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
                         </div>
-                        <div class="slide-img">
-                            <img src="./assets/projeto4.png" alt="">
-                        </div>
+                    </div>
+
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
                     </div>
                 </div>
             </div>
@@ -197,7 +232,7 @@
             </div>
         </section>  
         -->
-
+        
         <section id="introdution">
             <div class="introdution-container">
                 <h2>Breve resumo sobre mim...</h2>
@@ -216,7 +251,7 @@
         <div class="row">
             <div class="medias-sociais">
                 <div>
-                    <h2 style="font-size:25px;">Entre em contato através de um dos canais abaixo!</h2>
+                    <h2>Entre em contato através de um dos canais abaixo!</h2>
                 </div>
                 <div class="icons">
                     <a href="https://www.instagram.com/mario.cesar.c.f/" title="Instagram" target="_blank"><i

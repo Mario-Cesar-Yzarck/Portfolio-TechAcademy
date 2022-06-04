@@ -1,3 +1,4 @@
+/*
 const imgs = document.getElementById("img");
 const img = document.querySelectorAll("div.slider");
 const btnLeft = document.getElementById("btn-left");
@@ -38,5 +39,15 @@ btnRight.addEventListener("click", e => {
 
     imgs.style.transform = `translateX(${-idx* 650}px)`;
 })
+*/
 
-setInterval(changeImg, 2500)
+let counter = 1;
+document.getElementById("radio1").checked = true;
+
+setInterval(() => {
+    counter++;
+    if(counter > 4) {
+        counter = 1;
+    }
+    document.getElementById("radio" + counter).checked = true;
+} , 4000)

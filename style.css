@@ -4,43 +4,45 @@
 
 Paleta de cores
 
-#div1 {
-    background-color: #3f264d; roxo
+color1 {
+    #3f264d; roxo
 }
-#div2 {
-    background-color: #fa661d; laranja
+color2 {
+    #fa661d; laranja
 }
-#div4 {
-    background-color: ##9edae0; azul claro
+color4 {
+    ##9edae0; azul claro
 }
-#div5 {
-    background-color: #f6ebdd; quase branco
+color5 {
+    #f6ebdd; quase branco
 }
-#div6 {
-    background-color: #e8d826; dourado
+color6 {
+    #e8d826; dourado
 }
+color7 {
+    #e5dbfd; cinza clado
 */
 
+/* Gerais */
 
-
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 10px;
     font-family: 'Poppins', 'Times New Roman', Times, serif ;
     scroll-behavior: smooth;
     background-image: linear-gradient(60deg, #e5dbfd 0%, #fa661d 100%);
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-img{
+img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -54,7 +56,7 @@ p {
     letter-spacing: 0.05rem;
 }
 
-.container{
+.container {
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -157,6 +159,7 @@ p {
     padding: 25px 10px;
     font-size: 20px;
 }
+
 
 /* Seção de Portifólio */
 
