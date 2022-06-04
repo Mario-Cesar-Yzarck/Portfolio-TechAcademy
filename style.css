@@ -1,29 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,200;1,500&display=swap');
 
 /*
-
-Paleta de cores
-
-color1 {
-    #3f264d; roxo
-}
-color2 {
-    #fa661d; laranja
-}
-color4 {
-    ##9edae0; azul claro
-}
-color5 {
-    #f6ebdd; quase branco
-}
-color6 {
-    #e8d826; dourado
-}
-color7 {
-    #e5dbfd; cinza clado
+Paleta de cores experimental
+#3f264d; roxo
+#fa661d; laranja
+#9edae0; azul claro
+#f6ebdd; quase branco
+#e8d826; dourado
+#e5dbfd; cinza clado
 */
 
-/* Gerais */
+/* Configuração Gerais */
 
 * {
     padding: 0;
@@ -67,14 +54,15 @@ p {
 
 /* Seção de apresentação */
 
-#presentation{
+#presentation {
     background-image: url(assets/paper2.webp);
     background-size: cover;
     background-position: top center;
     position: relative;
     z-index: 1;
 }
-#presentation h1{
+
+#presentation h1 {
     display: block;
     width: fit-content;
     font-size: 5rem;
@@ -84,18 +72,20 @@ p {
     animation-delay: 1.5s;
 }
 
-#presentation h1:nth-child(1){
+#presentation h1:nth-child(1) {
     animation-delay: .8s;
 }
 
-#presentation h1:nth-child(2){
+#presentation h1:nth-child(2) {
     animation-delay: 1.8s;
 }
-#presentation h1:nth-child(3){
+
+#presentation h1:nth-child(3) {
     animation: text_reveal_name .5s ease forwards;
     animation-delay: 2.8s;
 }
-#presentation .cta{
+
+#presentation .cta {
     display: inline-block;
     padding: 10px 30px;
     color: #e8d826;
@@ -107,14 +97,15 @@ p {
     margin-top: 20px;
     transition: .5s ease;
     transition-property: background-color, color;
-
 }
-#presentation .cta:hover{
+
+#presentation .cta:hover {
     color: white;
     font-weight: 500;
     background-color: #e8d826;
 }
-#presentation h1 span{
+
+#presentation h1 span {
     position: absolute;
     top: 0;
     left:0;
@@ -124,16 +115,20 @@ p {
     animation-delay: .5s;
     background-color: #e8d826;
 }
-#presentation h1:nth-child(1) span{
+
+#presentation h1:nth-child(1) span {
     animation-delay: .5s;
 }
-#presentation h1:nth-child(2) span{
+
+#presentation h1:nth-child(2) span {
     animation-delay: 1.5s;
 }
-#presentation h1:nth-child(3) span{
+
+#presentation h1:nth-child(3) span {
     animation-delay: 2.5s;
 }
-#presentation::after{
+
+#presentation::after {
     content: '';
     position: absolute;
     left:0;
@@ -144,6 +139,7 @@ p {
     opacity: 0.5;
     z-index: -1;
 }
+
 
 /* Introdution */
 
@@ -163,14 +159,14 @@ p {
 
 /* Seção de Portifólio */
 
-#portfolio .portfolio{
+#portfolio .portfolio {
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
     padding: 50px 0;
 }
 
-#portfolio .portfolio-header p{
+#portfolio .portfolio-header p {
     font-size: 26px; 
     margin-bottom: 60px;
     padding: 30px;
@@ -184,7 +180,7 @@ p {
     flex-direction: column;
 }
 
-#portfolio .project-item{
+#portfolio .project-item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -207,12 +203,12 @@ p {
     color: white;
 }
 
-#portfolio .project-info h1{
+#portfolio .project-info h1 {
     font-size: 4rem;
     font-weight: 500px;
 }
 
-#portfolio .project-info h2{
+#portfolio .project-info h2 {
     font-size: 1.8rem;
     font-weight: 500px;
     margin-top: 10px;
@@ -231,7 +227,7 @@ p {
     position: relative;
 }
 
-#portfolio .project-info a{
+#portfolio .project-info a {
     color: white;
     font-size: 30px;
 }
@@ -250,12 +246,15 @@ p {
     background-image: linear-gradient(60deg, #acbfb7 0%, #f6ebdd 100%);
     opacity: 0.2;
 }
-#portfolio .project-img img{
+
+#portfolio .project-img img {
     transition: 0.5s ease transform;
 }
-#portfolio .project-item:hover .project-img img{
+
+#portfolio .project-item:hover .project-img img {
     transform: scale(1.1);
 }
+
 
 /* Footer (medias sociais e btn back to top)*/
 
@@ -273,14 +272,15 @@ footer .medias-sociais a i:hover {
     transform: translateY(-8px);
 }
 
-footer .btn-back-top a i{
+footer .btn-back-top a i {
     text-decoration: none; 
     color: #040006; 
     font-size: 36px;     
     margin: 30px 50px;    
 }
 
-/* Keyframes */
+
+/* Keyframes (preciso estudar mais) */
 
 @keyframes text_reveal{
     100%{
@@ -305,7 +305,7 @@ footer .btn-back-top a i{
     }
 }
 
-/* Media Query */
+/* Media Query (max-width: 426px; max-width: 768px; min-width: 768px; */
 
 @media only screen and (max-width: 768px) {
     #portfolio .project-info h1 {
