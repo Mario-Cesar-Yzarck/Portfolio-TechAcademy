@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,200;1,500&display=swap');
 
 /*
 
@@ -33,7 +33,7 @@ color7 {
 
 html {
     font-size: 10px;
-    font-family: 'Poppins', 'Times New Roman', Times, serif ;
+    font-family: 'Ubuntu', 'Arial', Times, serif ;
     scroll-behavior: smooth;
     background-image: linear-gradient(60deg, #e5dbfd 0%, #fa661d 100%);
 }
@@ -196,7 +196,7 @@ p {
 }
 
 #portfolio .project-info {
-    padding: 30px;
+    padding: 10px 40px;
     flex-basis: 50%;
     height: 100%;
     display: flex;
@@ -218,6 +218,12 @@ p {
     margin-top: 10px;
 }
 
+#portfolio .project-info p {
+    text-align: justify;
+    padding-right: 5px;
+    margin-bottom: 20px;
+}
+
 #portfolio .project-img {
     flex-basis: 50%;
     height: 300px;
@@ -227,8 +233,11 @@ p {
 
 #portfolio .project-info a{
     color: white;
-    font-size: 20px;
-    margin-top: 10px;
+    font-size: 30px;
+}
+
+#portfolio .project-info a:not(:first-child) {
+    padding: 20px;
 }
  
 #portfolio .project-img:after {
@@ -246,12 +255,6 @@ p {
 }
 #portfolio .project-item:hover .project-img img{
     transform: scale(1.1);
-}
-
-#portfolio .project-item .links a{
-    padding: 10px;
-    font-size: 30px;
-    
 }
 
 /* Footer (medias sociais e btn back to top)*/
@@ -310,7 +313,7 @@ footer .btn-back-top a i{
     }
     #portfolio .project-info p {
         font-size: 12px;
-    }
+    }    
     #presentation h1 {
         font-size: 40px;
     }
@@ -329,6 +332,15 @@ footer .btn-back-top a i{
         text-align: center;
         margin: 0;
     } 
+}
+
+@media only screen and (max-width: 426px) {
+    #portfolio .project-info {
+        padding: 10px;
+    }
+    #portfolio .project-img{
+        max-height: 150px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
